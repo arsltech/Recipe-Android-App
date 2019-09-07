@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/ivImage2"
+        android:src="@drawable/image"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Recipe Name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/txtRecipeName"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="Description"
+        android:textSize="22sp"
+        android:id="@+id/txtDescription"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Price"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="27sp"
+        android:textStyle="bold|italic"
+        android:gravity="end"
+        android:id="@+id/txtPrice"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Update"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:onClick="btnUpdateRecipe"
+            />
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Delete"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:onClick="btnDeleteRecipe"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
